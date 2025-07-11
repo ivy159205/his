@@ -1,0 +1,2753 @@
+[
+  {
+    "ContainingType": "WebApplication1.Controllers.BenhAnNgoaiTruController",
+    "Method": "GetBenhAnNgoaiTru",
+    "RelativePath": "api/BenhAnNgoaiTru",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[WebApplication1.Models.BenhAnNgoaiTru, WebApplication1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.BenhAnNgoaiTruController",
+    "Method": "PostBenhAnNgoaiTru",
+    "RelativePath": "api/BenhAnNgoaiTru",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "benhAnNgoaiTru",
+        "Type": "WebApplication1.Models.BenhAnNgoaiTru",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebApplication1.Models.BenhAnNgoaiTru",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.BenhAnNgoaiTruController",
+    "Method": "GetBenhAnNgoaiTru",
+    "RelativePath": "api/BenhAnNgoaiTru/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebApplication1.Models.BenhAnNgoaiTru",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.BenhAnNgoaiTruController",
+    "Method": "PutBenhAnNgoaiTru",
+    "RelativePath": "api/BenhAnNgoaiTru/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "benhAnNgoaiTru",
+        "Type": "WebApplication1.Models.BenhAnNgoaiTru",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.BenhAnNgoaiTruController",
+    "Method": "DeleteBenhAnNgoaiTru",
+    "RelativePath": "api/BenhAnNgoaiTru/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.BenhAnNgoaiTruController",
+    "Method": "GetBenhAnByBacSi",
+    "RelativePath": "api/BenhAnNgoaiTru/bacsi/{maBacSi}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "maBacSi",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[WebApplication1.Models.BenhAnNgoaiTru, WebApplication1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.BenhAnNgoaiTruController",
+    "Method": "GetBenhAnByBenhNhan",
+    "RelativePath": "api/BenhAnNgoaiTru/benhnhan/{maBn}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "maBn",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[WebApplication1.Models.BenhAnNgoaiTru, WebApplication1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.BenhAnNgoaiTruController",
+    "Method": "GetBenhAnByNgayKham",
+    "RelativePath": "api/BenhAnNgoaiTru/ngaykham/{ngay}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ngay",
+        "Type": "System.DateTime",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[WebApplication1.Models.BenhAnNgoaiTru, WebApplication1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.BenhAnNgoaiTruController",
+    "Method": "GetThongKeTheoBacSi",
+    "RelativePath": "api/BenhAnNgoaiTru/thongke/theobacsi",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tuNgay",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "denNgay",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.BenhAnNgoaiTruController",
+    "Method": "GetThongKeTheoNgay",
+    "RelativePath": "api/BenhAnNgoaiTru/thongke/theongay",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tuNgay",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "denNgay",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.BenhAnNoiTruController",
+    "Method": "GetBenhAnNoiTru",
+    "RelativePath": "api/BenhAnNoiTru",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[WebApplication1.Models.BenhAnNoiTru, WebApplication1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.BenhAnNoiTruController",
+    "Method": "PostBenhAnNoiTru",
+    "RelativePath": "api/BenhAnNoiTru",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "benhAnNoiTru",
+        "Type": "WebApplication1.Models.BenhAnNoiTru",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebApplication1.Models.BenhAnNoiTru",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.BenhAnNoiTruController",
+    "Method": "GetBenhAnNoiTru",
+    "RelativePath": "api/BenhAnNoiTru/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebApplication1.Models.BenhAnNoiTru",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.BenhAnNoiTruController",
+    "Method": "PutBenhAnNoiTru",
+    "RelativePath": "api/BenhAnNoiTru/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "benhAnNoiTru",
+        "Type": "WebApplication1.Models.BenhAnNoiTru",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.BenhAnNoiTruController",
+    "Method": "DeleteBenhAnNoiTru",
+    "RelativePath": "api/BenhAnNoiTru/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.BenhAnNoiTruController",
+    "Method": "GetBenhAnByBenhNhan",
+    "RelativePath": "api/BenhAnNoiTru/benhnhan/{maBn}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "maBn",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[WebApplication1.Models.BenhAnNoiTru, WebApplication1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.BenhAnNoiTruController",
+    "Method": "GetBenhAnDangDieuTri",
+    "RelativePath": "api/BenhAnNoiTru/dangdieutri",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[WebApplication1.Models.BenhAnNoiTru, WebApplication1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.BenhAnNoiTruController",
+    "Method": "GetBenhAnDaXuatVien",
+    "RelativePath": "api/BenhAnNoiTru/daxuatvien",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[WebApplication1.Models.BenhAnNoiTru, WebApplication1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.BenhAnNoiTruController",
+    "Method": "GetBenhAnByNhapVien",
+    "RelativePath": "api/BenhAnNoiTru/nhapvien/{maNhapVien}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "maNhapVien",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[WebApplication1.Models.BenhAnNoiTru, WebApplication1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.BenhAnNoiTruController",
+    "Method": "GetBenhAnByNgayNhapVien",
+    "RelativePath": "api/BenhAnNoiTru/theongay",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tuNgay",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "denNgay",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[WebApplication1.Models.BenhAnNoiTru, WebApplication1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.BenhAnNoiTruController",
+    "Method": "GetThongKeKetQuaDieuTri",
+    "RelativePath": "api/BenhAnNoiTru/thongke/ketqua",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tuNgay",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "denNgay",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.BenhAnNoiTruController",
+    "Method": "GetThongKeSoNgayDieuTri",
+    "RelativePath": "api/BenhAnNoiTru/thongke/songaydieutri",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tuNgay",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "denNgay",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.BenhAnNoiTruController",
+    "Method": "GetThongKeTheoNgay",
+    "RelativePath": "api/BenhAnNoiTru/thongke/theongay",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tuNgay",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "denNgay",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.BenhAnNoiTruController",
+    "Method": "XuatVien",
+    "RelativePath": "api/BenhAnNoiTru/xuatvien/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "WebApplication1.Controllers.XuatVienRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.BenhNhanController",
+    "Method": "GetBenhNhans",
+    "RelativePath": "api/BenhNhan",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[WebApplication1.Models.BenhNhan, WebApplication1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.BenhNhanController",
+    "Method": "PostBenhNhan",
+    "RelativePath": "api/BenhNhan",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "benhNhan",
+        "Type": "WebApplication1.Models.BenhNhan",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebApplication1.Models.BenhNhan",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.BenhNhanController",
+    "Method": "GetBenhNhan",
+    "RelativePath": "api/BenhNhan/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebApplication1.Models.BenhNhan",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.BenhNhanController",
+    "Method": "PutBenhNhan",
+    "RelativePath": "api/BenhNhan/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "benhNhan",
+        "Type": "WebApplication1.Models.BenhNhan",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.BenhNhanController",
+    "Method": "DeleteBenhNhan",
+    "RelativePath": "api/BenhNhan/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.BenhNhanController",
+    "Method": "GetBenhNhanFull",
+    "RelativePath": "api/BenhNhan/{id}/full",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebApplication1.Models.BenhNhan",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.BenhNhanController",
+    "Method": "UpdateBenhNhanStatus",
+    "RelativePath": "api/BenhNhan/{id}/status",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "trangThai",
+        "Type": "System.Boolean",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.BenhNhanController",
+    "Method": "GetActiveBenhNhans",
+    "RelativePath": "api/BenhNhan/active",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[WebApplication1.Models.BenhNhan, WebApplication1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.BenhNhanController",
+    "Method": "GetBenhNhanCount",
+    "RelativePath": "api/BenhNhan/count",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.BenhNhanController",
+    "Method": "SearchBenhNhan",
+    "RelativePath": "api/BenhNhan/search",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "hoTen",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "cccd",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "sdt",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "soTheBhyt",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[WebApplication1.Models.BenhNhan, WebApplication1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.ChiDinhXetNghiemController",
+    "Method": "GetChiDinhXetNghiems",
+    "RelativePath": "api/ChiDinhXetNghiem",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[WebApplication1.Models.ChiDinhXetNghiem, WebApplication1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.ChiDinhXetNghiemController",
+    "Method": "PostChiDinhXetNghiem",
+    "RelativePath": "api/ChiDinhXetNghiem",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "chiDinhXetNghiem",
+        "Type": "WebApplication1.Models.ChiDinhXetNghiem",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebApplication1.Models.ChiDinhXetNghiem",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.ChiDinhXetNghiemController",
+    "Method": "GetChiDinhXetNghiem",
+    "RelativePath": "api/ChiDinhXetNghiem/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebApplication1.Models.ChiDinhXetNghiem",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.ChiDinhXetNghiemController",
+    "Method": "PutChiDinhXetNghiem",
+    "RelativePath": "api/ChiDinhXetNghiem/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "chiDinhXetNghiem",
+        "Type": "WebApplication1.Models.ChiDinhXetNghiem",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.ChiDinhXetNghiemController",
+    "Method": "DeleteChiDinhXetNghiem",
+    "RelativePath": "api/ChiDinhXetNghiem/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.ChiDinhXetNghiemController",
+    "Method": "GetChiDinhWithResults",
+    "RelativePath": "api/ChiDinhXetNghiem/{id}/results",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebApplication1.Models.ChiDinhXetNghiem",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.ChiDinhXetNghiemController",
+    "Method": "UpdateChiDinhStatus",
+    "RelativePath": "api/ChiDinhXetNghiem/{id}/status",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "trangThai",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.ChiDinhXetNghiemController",
+    "Method": "GetChiDinhCount",
+    "RelativePath": "api/ChiDinhXetNghiem/count",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.ChiDinhXetNghiemController",
+    "Method": "GetChiDinhByDoctor",
+    "RelativePath": "api/ChiDinhXetNghiem/doctor/{maBacSi}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "maBacSi",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[WebApplication1.Models.ChiDinhXetNghiem, WebApplication1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.ChiDinhXetNghiemController",
+    "Method": "GetChiDinhByPatient",
+    "RelativePath": "api/ChiDinhXetNghiem/patient/{maBn}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "maBn",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[WebApplication1.Models.ChiDinhXetNghiem, WebApplication1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.ChiDinhXetNghiemController",
+    "Method": "SearchChiDinhXetNghiem",
+    "RelativePath": "api/ChiDinhXetNghiem/search",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "maBn",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "maBacSi",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "maDichVu",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "trangThai",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "tuNgay",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "denNgay",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[WebApplication1.Models.ChiDinhXetNghiem, WebApplication1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.ChiDinhXetNghiemController",
+    "Method": "GetChiDinhByService",
+    "RelativePath": "api/ChiDinhXetNghiem/service/{maDichVu}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "maDichVu",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[WebApplication1.Models.ChiDinhXetNghiem, WebApplication1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.ChiDinhXetNghiemController",
+    "Method": "GetChiDinhStatistics",
+    "RelativePath": "api/ChiDinhXetNghiem/statistics",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.ChiDinhXetNghiemController",
+    "Method": "GetChiDinhByStatus",
+    "RelativePath": "api/ChiDinhXetNghiem/status/{trangThai}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "trangThai",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[WebApplication1.Models.ChiDinhXetNghiem, WebApplication1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.ChiDinhXetNghiemController",
+    "Method": "GetChiDinhToday",
+    "RelativePath": "api/ChiDinhXetNghiem/today",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[WebApplication1.Models.ChiDinhXetNghiem, WebApplication1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.ChiTietDonThuocController",
+    "Method": "GetChiTietDonThuocs",
+    "RelativePath": "api/ChiTietDonThuoc",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[WebApplication1.Models.ChiTietDonThuoc, WebApplication1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.ChiTietDonThuocController",
+    "Method": "PostChiTietDonThuoc",
+    "RelativePath": "api/ChiTietDonThuoc",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "chiTietDonThuoc",
+        "Type": "WebApplication1.Models.ChiTietDonThuoc",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebApplication1.Models.ChiTietDonThuoc",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.ChiTietDonThuocController",
+    "Method": "GetChiTietDonThuoc",
+    "RelativePath": "api/ChiTietDonThuoc/{maDonThuoc}/{maThuoc}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "maDonThuoc",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "maThuoc",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebApplication1.Models.ChiTietDonThuoc",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.ChiTietDonThuocController",
+    "Method": "PutChiTietDonThuoc",
+    "RelativePath": "api/ChiTietDonThuoc/{maDonThuoc}/{maThuoc}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "maDonThuoc",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "maThuoc",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "chiTietDonThuoc",
+        "Type": "WebApplication1.Models.ChiTietDonThuoc",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.ChiTietDonThuocController",
+    "Method": "DeleteChiTietDonThuoc",
+    "RelativePath": "api/ChiTietDonThuoc/{maDonThuoc}/{maThuoc}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "maDonThuoc",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "maThuoc",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.ChiTietDonThuocController",
+    "Method": "GetChiTietCount",
+    "RelativePath": "api/ChiTietDonThuoc/count",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.ChiTietDonThuocController",
+    "Method": "GetChiTietByMedicine",
+    "RelativePath": "api/ChiTietDonThuoc/medicine/{maThuoc}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "maThuoc",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[WebApplication1.Models.ChiTietDonThuoc, WebApplication1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.ChiTietDonThuocController",
+    "Method": "GetChiTietByPrescription",
+    "RelativePath": "api/ChiTietDonThuoc/prescription/{maDonThuoc}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "maDonThuoc",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[WebApplication1.Models.ChiTietDonThuoc, WebApplication1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.ChiTietDonThuocController",
+    "Method": "DeleteAllByPrescription",
+    "RelativePath": "api/ChiTietDonThuoc/prescription/{maDonThuoc}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "maDonThuoc",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.ChiTietDonThuocController",
+    "Method": "AddMultipleMedicines",
+    "RelativePath": "api/ChiTietDonThuoc/prescription/{maDonThuoc}/medicines",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "maDonThuoc",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "chiTietDonThuocs",
+        "Type": "System.Collections.Generic.List\u00601[[WebApplication1.Models.ChiTietDonThuoc, WebApplication1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[WebApplication1.Models.ChiTietDonThuoc, WebApplication1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.ChiTietDonThuocController",
+    "Method": "RecalculatePrescriptionTotal",
+    "RelativePath": "api/ChiTietDonThuoc/prescription/{maDonThuoc}/recalculate",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "maDonThuoc",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.ChiTietDonThuocController",
+    "Method": "GetPrescriptionTotal",
+    "RelativePath": "api/ChiTietDonThuoc/prescription/{maDonThuoc}/total",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "maDonThuoc",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.ChiTietDonThuocController",
+    "Method": "SearchChiTietDonThuoc",
+    "RelativePath": "api/ChiTietDonThuoc/search",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "maDonThuoc",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "maThuoc",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "donGiaMin",
+        "Type": "System.Nullable\u00601[[System.Decimal, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "donGiaMax",
+        "Type": "System.Nullable\u00601[[System.Decimal, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "soLuongMin",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "soLuongMax",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[WebApplication1.Models.ChiTietDonThuoc, WebApplication1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.ChiTietDonThuocController",
+    "Method": "GetMedicineStatistics",
+    "RelativePath": "api/ChiTietDonThuoc/statistics/medicine",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.ChiTietHoaDonController",
+    "Method": "GetChiTietHoaDons",
+    "RelativePath": "api/ChiTietHoaDon",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[WebApplication1.Models.ChiTietHoaDon, WebApplication1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.ChiTietHoaDonController",
+    "Method": "PostChiTietHoaDon",
+    "RelativePath": "api/ChiTietHoaDon",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "chiTietHoaDon",
+        "Type": "WebApplication1.Models.ChiTietHoaDon",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebApplication1.Models.ChiTietHoaDon",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.ChiTietHoaDonController",
+    "Method": "GetChiTietHoaDon",
+    "RelativePath": "api/ChiTietHoaDon/{maHoaDon}/{maDichVu}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "maHoaDon",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "maDichVu",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebApplication1.Models.ChiTietHoaDon",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.ChiTietHoaDonController",
+    "Method": "PutChiTietHoaDon",
+    "RelativePath": "api/ChiTietHoaDon/{maHoaDon}/{maDichVu}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "maHoaDon",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "maDichVu",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "chiTietHoaDon",
+        "Type": "WebApplication1.Models.ChiTietHoaDon",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.ChiTietHoaDonController",
+    "Method": "DeleteChiTietHoaDon",
+    "RelativePath": "api/ChiTietHoaDon/{maHoaDon}/{maDichVu}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "maHoaDon",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "maDichVu",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.ChiTietHoaDonController",
+    "Method": "GetChiTietHoaDonsByMaHoaDon",
+    "RelativePath": "api/ChiTietHoaDon/hoadon/{maHoaDon}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "maHoaDon",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[WebApplication1.Models.ChiTietHoaDon, WebApplication1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.ChiTietHoaDonController",
+    "Method": "GetTongTienBenhNhanTra",
+    "RelativePath": "api/ChiTietHoaDon/tongtienbenhnantra/{maHoaDon}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "maHoaDon",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Decimal",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.ChiTietHoaDonController",
+    "Method": "GetTongTienBHYT",
+    "RelativePath": "api/ChiTietHoaDon/tongtienbhyt/{maHoaDon}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "maHoaDon",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Decimal",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.ChiTietHoaDonController",
+    "Method": "GetTongTienHoaDon",
+    "RelativePath": "api/ChiTietHoaDon/tongtienhoadon/{maHoaDon}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "maHoaDon",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Decimal",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.ChiTietNhapKhoThuocController",
+    "Method": "GetChiTietNhapKhoThuocs",
+    "RelativePath": "api/ChiTietNhapKhoThuoc",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[WebApplication1.Models.ChiTietNhapKhoThuoc, WebApplication1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.ChiTietNhapKhoThuocController",
+    "Method": "PostChiTietNhapKhoThuoc",
+    "RelativePath": "api/ChiTietNhapKhoThuoc",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "chiTietNhapKhoThuoc",
+        "Type": "WebApplication1.Models.ChiTietNhapKhoThuoc",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebApplication1.Models.ChiTietNhapKhoThuoc",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.ChiTietNhapKhoThuocController",
+    "Method": "GetChiTietNhapKhoThuoc",
+    "RelativePath": "api/ChiTietNhapKhoThuoc/{maPhieuNhap}/{maThuoc}/{soLo}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "maPhieuNhap",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "maThuoc",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "soLo",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebApplication1.Models.ChiTietNhapKhoThuoc",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.ChiTietNhapKhoThuocController",
+    "Method": "PutChiTietNhapKhoThuoc",
+    "RelativePath": "api/ChiTietNhapKhoThuoc/{maPhieuNhap}/{maThuoc}/{soLo}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "maPhieuNhap",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "maThuoc",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "soLo",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "chiTietNhapKhoThuoc",
+        "Type": "WebApplication1.Models.ChiTietNhapKhoThuoc",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.ChiTietNhapKhoThuocController",
+    "Method": "DeleteChiTietNhapKhoThuoc",
+    "RelativePath": "api/ChiTietNhapKhoThuoc/{maPhieuNhap}/{maThuoc}/{soLo}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "maPhieuNhap",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "maThuoc",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "soLo",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.ChiTietNhapKhoThuocController",
+    "Method": "GetThuocDaHetHan",
+    "RelativePath": "api/ChiTietNhapKhoThuoc/dahethan",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[WebApplication1.Models.ChiTietNhapKhoThuoc, WebApplication1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.ChiTietNhapKhoThuocController",
+    "Method": "GetThuocHetHan",
+    "RelativePath": "api/ChiTietNhapKhoThuoc/hethan",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "soNgay",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[WebApplication1.Models.ChiTietNhapKhoThuoc, WebApplication1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.ChiTietNhapKhoThuocController",
+    "Method": "GetChiTietNhapKhoThuocsByMaPhieuNhap",
+    "RelativePath": "api/ChiTietNhapKhoThuoc/phieunhap/{maPhieuNhap}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "maPhieuNhap",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[WebApplication1.Models.ChiTietNhapKhoThuoc, WebApplication1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.ChiTietNhapKhoThuocController",
+    "Method": "GetChiTietNhapKhoThuocsByMaThuoc",
+    "RelativePath": "api/ChiTietNhapKhoThuoc/thuoc/{maThuoc}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "maThuoc",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[WebApplication1.Models.ChiTietNhapKhoThuoc, WebApplication1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.ChiTietNhapKhoThuocController",
+    "Method": "GetChiTietNhapKhoThuocsByMaThuocAndSoLo",
+    "RelativePath": "api/ChiTietNhapKhoThuoc/thuoc/{maThuoc}/solo/{soLo}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "maThuoc",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "soLo",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[WebApplication1.Models.ChiTietNhapKhoThuoc, WebApplication1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.ChiTietNhapKhoThuocController",
+    "Method": "GetTongSoLuongPhieuNhap",
+    "RelativePath": "api/ChiTietNhapKhoThuoc/tongsoluong/{maPhieuNhap}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "maPhieuNhap",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.ChiTietNhapKhoThuocController",
+    "Method": "GetTongTienPhieuNhap",
+    "RelativePath": "api/ChiTietNhapKhoThuoc/tongtien/{maPhieuNhap}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "maPhieuNhap",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Decimal",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.ChiTietNhapKhoThuocController",
+    "Method": "GetTonKhoThuoc",
+    "RelativePath": "api/ChiTietNhapKhoThuoc/tonkho/{maThuoc}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "maThuoc",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.ChiTietNhapKhoThuocController",
+    "Method": "GetTonKhoThuocTheoSoLo",
+    "RelativePath": "api/ChiTietNhapKhoThuoc/tonkho/{maThuoc}/solo/{soLo}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "maThuoc",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "soLo",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.ChiTietNhapKhoVatTuController",
+    "Method": "GetChiTietNhapKhoVatTus",
+    "RelativePath": "api/ChiTietNhapKhoVatTu",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[WebApplication1.Models.ChiTietNhapKhoVatTu, WebApplication1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.ChiTietNhapKhoVatTuController",
+    "Method": "PostChiTietNhapKhoVatTu",
+    "RelativePath": "api/ChiTietNhapKhoVatTu",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "chiTietNhapKhoVatTu",
+        "Type": "WebApplication1.Models.ChiTietNhapKhoVatTu",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebApplication1.Models.ChiTietNhapKhoVatTu",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.ChiTietNhapKhoVatTuController",
+    "Method": "GetChiTietNhapKhoVatTu",
+    "RelativePath": "api/ChiTietNhapKhoVatTu/{maPhieuNhap}/{maVatTu}/{soLo}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "maPhieuNhap",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "maVatTu",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "soLo",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebApplication1.Models.ChiTietNhapKhoVatTu",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.ChiTietNhapKhoVatTuController",
+    "Method": "PutChiTietNhapKhoVatTu",
+    "RelativePath": "api/ChiTietNhapKhoVatTu/{maPhieuNhap}/{maVatTu}/{soLo}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "maPhieuNhap",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "maVatTu",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "soLo",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "chiTietNhapKhoVatTu",
+        "Type": "WebApplication1.Models.ChiTietNhapKhoVatTu",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.ChiTietNhapKhoVatTuController",
+    "Method": "DeleteChiTietNhapKhoVatTu",
+    "RelativePath": "api/ChiTietNhapKhoVatTu/{maPhieuNhap}/{maVatTu}/{soLo}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "maPhieuNhap",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "maVatTu",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "soLo",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.ChiTietNhapKhoVatTuController",
+    "Method": "GetBaoCaoVatTuHetHan",
+    "RelativePath": "api/ChiTietNhapKhoVatTu/baocaohethan",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "soNgay",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.ChiTietNhapKhoVatTuController",
+    "Method": "GetVatTuDaHetHan",
+    "RelativePath": "api/ChiTietNhapKhoVatTu/dahethan",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[WebApplication1.Models.ChiTietNhapKhoVatTu, WebApplication1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.ChiTietNhapKhoVatTuController",
+    "Method": "GetGiaTriTonKhoVatTu",
+    "RelativePath": "api/ChiTietNhapKhoVatTu/giatritonkho/{maVatTu}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "maVatTu",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Decimal",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.ChiTietNhapKhoVatTuController",
+    "Method": "GetVatTuHetHan",
+    "RelativePath": "api/ChiTietNhapKhoVatTu/hethan",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "soNgay",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[WebApplication1.Models.ChiTietNhapKhoVatTu, WebApplication1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.ChiTietNhapKhoVatTuController",
+    "Method": "GetChiTietNhapKhoVatTusByMaPhieuNhap",
+    "RelativePath": "api/ChiTietNhapKhoVatTu/phieunhap/{maPhieuNhap}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "maPhieuNhap",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[WebApplication1.Models.ChiTietNhapKhoVatTu, WebApplication1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.ChiTietNhapKhoVatTuController",
+    "Method": "GetThongKeTonKhoVatTu",
+    "RelativePath": "api/ChiTietNhapKhoVatTu/thongketonkho",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.ChiTietNhapKhoVatTuController",
+    "Method": "GetTongSoLuongPhieuNhap",
+    "RelativePath": "api/ChiTietNhapKhoVatTu/tongsoluong/{maPhieuNhap}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "maPhieuNhap",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.ChiTietNhapKhoVatTuController",
+    "Method": "GetTongTienPhieuNhap",
+    "RelativePath": "api/ChiTietNhapKhoVatTu/tongtien/{maPhieuNhap}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "maPhieuNhap",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Decimal",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.ChiTietNhapKhoVatTuController",
+    "Method": "GetTonKhoVatTu",
+    "RelativePath": "api/ChiTietNhapKhoVatTu/tonkho/{maVatTu}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "maVatTu",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.ChiTietNhapKhoVatTuController",
+    "Method": "GetTonKhoVatTuTheoSoLo",
+    "RelativePath": "api/ChiTietNhapKhoVatTu/tonkho/{maVatTu}/solo/{soLo}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "maVatTu",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "soLo",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.ChiTietNhapKhoVatTuController",
+    "Method": "GetChiTietNhapKhoVatTusByMaVatTu",
+    "RelativePath": "api/ChiTietNhapKhoVatTu/vattu/{maVatTu}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "maVatTu",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[WebApplication1.Models.ChiTietNhapKhoVatTu, WebApplication1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.ChiTietNhapKhoVatTuController",
+    "Method": "GetChiTietNhapKhoVatTusByMaVatTuAndSoLo",
+    "RelativePath": "api/ChiTietNhapKhoVatTu/vattu/{maVatTu}/solo/{soLo}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "maVatTu",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "soLo",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[WebApplication1.Models.ChiTietNhapKhoVatTu, WebApplication1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.DangKyKhamController",
+    "Method": "GetDangKyKhams",
+    "RelativePath": "api/DangKyKham",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[WebApplication1.Models.DangKyKham, WebApplication1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.DangKyKhamController",
+    "Method": "PostDangKyKham",
+    "RelativePath": "api/DangKyKham",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dangKyKham",
+        "Type": "WebApplication1.Models.DangKyKham",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebApplication1.Models.DangKyKham",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.DangKyKhamController",
+    "Method": "GetDangKyKham",
+    "RelativePath": "api/DangKyKham/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebApplication1.Models.DangKyKham",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.DangKyKhamController",
+    "Method": "PutDangKyKham",
+    "RelativePath": "api/DangKyKham/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "dangKyKham",
+        "Type": "WebApplication1.Models.DangKyKham",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.DangKyKhamController",
+    "Method": "DeleteDangKyKham",
+    "RelativePath": "api/DangKyKham/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.DangKyKhamController",
+    "Method": "GetDangKyKhamByBacSi",
+    "RelativePath": "api/DangKyKham/ByBacSi/{maBacSi}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "maBacSi",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[WebApplication1.Models.DangKyKham, WebApplication1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.DangKyKhamController",
+    "Method": "GetDangKyKhamByBenhNhan",
+    "RelativePath": "api/DangKyKham/ByBenhNhan/{maBenhNhan}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "maBenhNhan",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[WebApplication1.Models.DangKyKham, WebApplication1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.DangKyKhamController",
+    "Method": "GetDangKyKhamByNgayKham",
+    "RelativePath": "api/DangKyKham/ByNgayKham/{ngayKham}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ngayKham",
+        "Type": "System.DateOnly",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[WebApplication1.Models.DangKyKham, WebApplication1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.DangKyKhamController",
+    "Method": "GetStatistics",
+    "RelativePath": "api/DangKyKham/Statistics",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.DangKyKhamController",
+    "Method": "UpdateTrangThai",
+    "RelativePath": "api/DangKyKham/UpdateTrangThai/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "trangThai",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
