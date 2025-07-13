@@ -144,3 +144,4 @@ D:\DK\New_Project\WebApplication1\obj\Debug\net8.0\refint\WebApplication1.dll
 D:\DK\New_Project\WebApplication1\obj\Debug\net8.0\WebApplication1.pdb
 D:\DK\New_Project\WebApplication1\obj\Debug\net8.0\WebApplication1.genruntimeconfig.cache
 D:\DK\New_Project\WebApplication1\obj\Debug\net8.0\ref\WebApplication1.dll
+D:\DK\New_Project\WebApplication1\obj\Debug\net8.0\WebApplication1.sourcelink.json
