@@ -1,5 +1,11 @@
 pipeline {
-    agent any
+    // THAY ĐỔI AGENT Ở ĐÂY
+    agent {
+        docker {
+            image 'docker:26-cli' // Sử dụng image có chứa Docker CLI
+            args '-v /var/run/docker.sock:/var/run/docker.sock' // Map socket vào agent này
+        }
+    }
 
     environment {
         DOCKER_IMAGE_NAME = "my-webapp"
@@ -11,7 +17,6 @@ pipeline {
         stage('Setup Network') {
             steps {
                 script {
-                    // SỬA LỖI Ở DÒNG NÀY: Thêm dấu \ trước ký tự $ ở cuối
                     def existingNetwork = sh(script: "docker network ls --filter name=^${DOCKER_NETWORK}\$ --format '{{.Name}}'", returnStdout: true).trim()
                     
                     if (existingNetwork != DOCKER_NETWORK) {
@@ -36,9 +41,9 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 echo "Building the Docker image..."
-                script {
-                    docker.build(DOCKER_IMAGE_NAME, '.')
-                }
+                // Lệnh docker.build bây giờ không cần thiết vì chúng ta đã có agent là docker
+                // Thay vào đó, dùng lệnh sh trực tiếp sẽ rõ ràng hơn
+                sh "docker build -t ${DOCKER_IMAGE_NAME} ."
             }
         }
 
