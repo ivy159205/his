@@ -1,9 +1,9 @@
 pipeline {
-    // THAY ĐỔI AGENT Ở ĐÂY
     agent {
         docker {
-            image 'docker:26-cli' // Sử dụng image có chứa Docker CLI
-            args '-v /var/run/docker.sock:/var/run/docker.sock' // Map socket vào agent này
+            image 'docker:26-cli'
+            args '-v /var/run/docker.sock:/var/run/docker.sock'
+            user 'root' // Chạy các bước với quyền root bên trong agent
         }
     }
 
@@ -26,14 +26,20 @@ pipeline {
                         echo "Docker network '${DOCKER_NETWORK}' already exists."
                     }
 
-                    sh """
-                    if ! docker inspect -f '{{.NetworkSettings.Networks.${DOCKER_NETWORK}}}' sql_server_db > /dev/null 2>&1; then
-                        echo "Connecting sql_server_db to ${DOCKER_NETWORK}"
-                        docker network connect ${DOCKER_NETWORK} sql_server_db
-                    else
-                        echo "sql_server_db is already connected to ${DOCKER_NETWORK}"
-                    fi
-                    """
+                    // Kiểm tra xem sql_server_db có tồn tại không trước khi connect
+                    def sqlServerExists = sh(script: "docker ps -q -f name=sql_server_db", returnStdout: true).trim()
+                    if (sqlServerExists) {
+                        sh """
+                        if ! docker inspect -f '{{.NetworkSettings.Networks.${DOCKER_NETWORK}}}' sql_server_db > /dev/null 2>&1; then
+                            echo "Connecting sql_server_db to ${DOCKER_NETWORK}"
+                            docker network connect ${DOCKER_NETWORK} sql_server_db
+                        else
+                            echo "sql_server_db is already connected to ${DOCKER_NETWORK}"
+                        fi
+                        """
+                    } else {
+                        echo "Warning: sql_server_db container not found. Skipping network connection."
+                    }
                 }
             }
         }
@@ -41,8 +47,6 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 echo "Building the Docker image..."
-                // Lệnh docker.build bây giờ không cần thiết vì chúng ta đã có agent là docker
-                // Thay vào đó, dùng lệnh sh trực tiếp sẽ rõ ràng hơn
                 sh "docker build -t ${DOCKER_IMAGE_NAME} ."
             }
         }
