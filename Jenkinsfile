@@ -2,8 +2,8 @@ pipeline {
     agent {
         docker {
             image 'docker:26-cli'
-            args '-v /var/run/docker.sock:/var/run/docker.sock'
-            user 'root' // Chạy các bước với quyền root bên trong agent
+            // Gộp tùy chọn user vào args bằng cờ -u của Docker
+            args '-u root -v /var/run/docker.sock:/var/run/docker.sock'
         }
     }
 
@@ -26,7 +26,6 @@ pipeline {
                         echo "Docker network '${DOCKER_NETWORK}' already exists."
                     }
 
-                    // Kiểm tra xem sql_server_db có tồn tại không trước khi connect
                     def sqlServerExists = sh(script: "docker ps -q -f name=sql_server_db", returnStdout: true).trim()
                     if (sqlServerExists) {
                         sh """
